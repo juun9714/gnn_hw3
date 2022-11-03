@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from layers import GraphConvolution
 
-
+# gcn layer varies from 2 to 7 for HW3-1
 class GCN(nn.Module):
     def __init__(self, nfeat, nhid, nclass, dropout):
         super(GCN, self).__init__()
